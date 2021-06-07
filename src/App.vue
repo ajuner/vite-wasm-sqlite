@@ -34,7 +34,7 @@ export default defineComponent({
 		let triple: any;
 		const handleTriple = () => {
 			alert(triple.double(text.value))
-			alert(triple.add(text.value, text.value))
+			alert(triple.add(text.value, text.value)) // 这里是乘法  没改
 		}
 		onMounted(async () => {
 			const response = await fetch("lib.wasm");
